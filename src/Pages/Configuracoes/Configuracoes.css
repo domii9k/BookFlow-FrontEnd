@@ -1,0 +1,11 @@
+.configuracoes-content{
+    display: grid;
+    align-items: center;
+    height: 500px;
+}
+
+.configuracoes-content h1{
+    text-align: center;
+    font-size: 30px;
+    color: #081552;
+}

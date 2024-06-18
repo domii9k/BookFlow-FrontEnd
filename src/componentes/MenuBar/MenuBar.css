@@ -1,0 +1,114 @@
+.menu-lateral-open{
+    width: 250px;
+    height: 100vh;
+    background-color: #071E39;
+    transition: all 0.5s ease;
+}
+
+.menu-lateral-close{
+    width: 75px;
+    height: 100vh;
+    background-color: #071E39;
+    transition: all 0.5s ease
+}
+
+.logo-principal{
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../assets/logo-principal.png");
+}
+
+.logo-secundaria{
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../assets/logo-secundaria.png");
+}
+
+a{
+    text-decoration: none;
+}
+
+.item-menu{
+    display: flex;
+    width: 100%;
+    padding: 15px 0 15px 0;
+}
+
+.item-menu:hover, .btn-expandir-open:hover, .btn-expandir-close:hover{
+    background-color: #174A86;  
+}
+
+.item-menu_span-icon{
+    width: 25px;
+}
+
+.item-menu_text{
+    width: 100%;
+}
+
+.item-menu_text p{
+    
+    height: 25px;
+}
+
+.item-menu span, .btn-expandir-close span, .btn-expandir-open span{
+    margin: 0;
+    margin-left: 25px;
+}
+
+.item-menu span img, .btn-expandir-close span img, .btn-expandir-open span img{
+    margin: 0;
+    width: 25px;
+    height: 25px;
+}
+
+.item-menu p, .btn-expandir-close p, .btn-expandir-open p{
+    display: flex;
+    font-size: 20px;
+    color: white;
+}
+
+.btn-expandir-open{
+    display: flex;
+    width: 75px;
+    padding: 15px 0 15px 0;
+    position: absolute;
+    bottom: 0px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.btn-expandir-close{
+    display: flex;
+    width: 250px;
+    padding: 15px 0 15px 0;
+    position: absolute;
+    bottom: 0px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.item-menu_icon-open{
+    background-image: url("../../assets/arrow-right.png");
+    background-repeat: no-repeat;
+    padding-right: 100%;
+    background-size: 25px;
+    display: flex;
+    width: 100%;
+    padding: 15px 0 15px 0;
+}
+
+.item-menu_icon-close{
+    background-image: url("../../assets/arrow-left.png");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    display: flex;
+    width: 100%;
+    padding: 15px 0 15px 0;
+}
