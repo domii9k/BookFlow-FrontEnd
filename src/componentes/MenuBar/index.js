@@ -19,7 +19,7 @@ const MenuBar = () => {
     return (
         <nav className={isOpen ? "menu-lateral-close" : "menu-lateral-open"}>
             <ul>
-                <li className={isOpen ? "logo-secundaria" : "logo-principal"}>6</li>
+                <li className={isOpen ? "logo-secundaria" : "logo-principal"}></li>
 
                 <Link to="/usuarios">
                     <li className="item-menu">
