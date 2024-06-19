@@ -16,7 +16,6 @@ const PageUsers = () => {
                     pageName="Lista de Usuários"
                     buttonName="Novo Usuário"
                     iconPage={iconListaUsuario}>
-                    <Table />
                 </PageContent>
             </section>
         </main>

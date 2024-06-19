@@ -15,7 +15,6 @@ const PageDevidos = () => {
                     pageName="Lista de Devidos"
                     buttonName="Novo"
                     iconPage={iconListaDevido}>
-                    <Table />
                 </PageContent>
             </section>
         </main>
