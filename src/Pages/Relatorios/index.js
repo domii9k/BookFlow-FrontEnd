@@ -7,9 +7,13 @@ const PageRelatorios = () => {
             <MenuBar></MenuBar>
             <section>
                 <Header></Header>
-                <h1>
-                    Pagina Relatorios
-                </h1>
+                <section className="configuracoes-content">
+
+                    <h1>
+                        Desculpe ainda estamos trabalhando nessa página!
+                    </h1>
+
+                </section>
             </section>
         </main>
     )

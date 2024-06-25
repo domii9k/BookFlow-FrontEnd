@@ -12,11 +12,13 @@ const PageUsers = () => {
             <section>
                 <Header></Header>
                 
-                <PageContent
-                    pageName="Lista de Usuários"
-                    buttonName="Novo Usuário"
-                    iconPage={iconListaUsuario}>
-                </PageContent>
+                <section className="configuracoes-content">
+
+                    <h1>
+                        Desculpe ainda estamos trabalhando nessa página!
+                    </h1>
+
+                </section>
             </section>
         </main>
     )
