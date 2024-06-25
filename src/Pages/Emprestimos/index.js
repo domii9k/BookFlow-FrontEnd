@@ -19,8 +19,8 @@ const PageEmprestimos = () => {
     const fetchEmprestimos = async () => {
       try {
         const response = await axios.get('https://bookflow-3gbn.onrender.com/emprestimos');
-        if (response.data && response.data.lista && Array.isArray(response.data.lista)) {
-          setEmprestimos(response.data.lista);
+        if (Array.isArray(response.data)) {
+          setEmprestimos(response.data);
         } else {
           console.error('A resposta da API não contém a estrutura esperada:', response.data);
         }
@@ -30,14 +30,14 @@ const PageEmprestimos = () => {
     };
     fetchEmprestimos();
   }, []);
-
+  
   useEffect(() => {
     if (emprestimos.length === 0) {
-      setCarregandoEmprestimos(true)
+      setCarregandoEmprestimos(true);
     } else {
-      setCarregandoEmprestimos(false)
+      setCarregandoEmprestimos(false);
     }
-  })
+  }, [emprestimos]);  
 
   return (
     <main>
