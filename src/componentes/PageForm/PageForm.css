@@ -53,6 +53,40 @@
     display: flex;
 }
 
+.search-bar-aluno, .search-bar-livro {
+    display: block;
+    position: absolute;
+    margin-top: 50px;
+    background-color: #f9f9f9;
+    width: 237px;
+    height: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    overflow:auto;
+    z-index: 1;
+}
+
+.search-bar-curso{
+    display: block;
+    position: absolute;
+    margin-top: 190px;
+    background-color: #f9f9f9;
+    width: 237px;
+    height: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    overflow:auto;
+    z-index: 1;
+}
+
+.search-bar-aluno ul, .search-bar-curso ul, .search-bar-livro ul {
+    list-style: none;
+    color: #081552;
+    height: 20px;
+}
+
+.search-bar-aluno ul:hover, .search-bar-curso ul:hover, .search-bar-livro ul:hover {
+    background-color: #f1f1f1;
+}
+
 .form-container_content .form-principal .label-form_principal {
     display: flex;
     flex-direction: column;

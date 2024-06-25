@@ -1,7 +1,8 @@
 import "./Table.css"
 
 const Table = ({ vetor }) => {
-    console.log(vetor)
+    // console.log(vetor)
+
     return (
         <div className="container-table">
             <table>
@@ -28,7 +29,6 @@ const Table = ({ vetor }) => {
                         </tr>
                     ))}
                 </tbody>
-
 
             </table>
         </div>
