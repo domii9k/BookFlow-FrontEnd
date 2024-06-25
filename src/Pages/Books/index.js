@@ -15,7 +15,6 @@ const PageBooks = () => {
                     pageName="Lista de Livro"
                     buttonName="Novo Livro"
                     iconPage={iconListaLivro}>
-                    <Table />
                 </PageContent>
             </section>
         </main>
