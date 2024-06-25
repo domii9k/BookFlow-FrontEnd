@@ -194,9 +194,9 @@ const PageForm = () => {
                 } else {
                     setEmprestimos([...emprestimos, retorno_convertido]);
                     openModal();
-                    //setTimeout(() => {
-                    // window.location.reload();
-                    //  }, 2000);
+                    setTimeout(() => {
+                        window.location.reload();
+                    }, 2000);
                 }
             })
             .catch(error => {
@@ -360,7 +360,6 @@ const PageForm = () => {
                                 <div className="label-form_principal">
                                     <label>Livro:</label>
                                     <label>Patrimônio:</label>
-                                    <label>Data:</label>
                                     <label>Devolução:</label>
                                 </div>
                                 <div className="input-form_principal">
