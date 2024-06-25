@@ -11,11 +11,13 @@ const PageBooks = () => {
             <section>
                 <Header></Header>
 
-                <PageContent
-                    pageName="Lista de Livro"
-                    buttonName="Novo Livro"
-                    iconPage={iconListaLivro}>
-                </PageContent>
+                <section className="configuracoes-content">
+
+                    <h1>
+                        Desculpe ainda estamos trabalhando nessa página!
+                    </h1>
+
+                </section>
             </section>
         </main>
     )

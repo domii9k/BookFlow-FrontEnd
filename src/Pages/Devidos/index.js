@@ -11,11 +11,13 @@ const PageDevidos = () => {
             <section>
                 <Header></Header>
                 
-                <PageContent
-                    pageName="Lista de Devidos"
-                    buttonName="Novo"
-                    iconPage={iconListaDevido}>
-                </PageContent>
+                <section className="configuracoes-content">
+
+                    <h1>
+                        Desculpe ainda estamos trabalhando nessa página!
+                    </h1>
+
+                </section>
             </section>
         </main>
     )
