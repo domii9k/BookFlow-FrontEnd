@@ -29,7 +29,7 @@ const PageForm = () => {
             codUsuario: 1,
         },
         dataDevolucao: "",
-        dataEmprestimo: "",
+        //dataEmprestimo: "",
         atrasado: 0,
         observacao: ""
     };
@@ -171,7 +171,7 @@ const PageForm = () => {
     // Funcao para o cadastro de Emprestimos
     const cadastrar = () => {
         console.log('Objeto a ser enviado:', objEmprestimo); // Adicione esta linha para verificar o objeto
-    
+
         fetch('https://bookflow-3gbn.onrender.com/emprestimos', {
             method: 'post',
             body: JSON.stringify(objEmprestimo),
@@ -188,15 +188,15 @@ const PageForm = () => {
             })
             .then(retorno_convertido => {
                 console.log('Resposta da API:', retorno_convertido); // Adicione esta linha para verificar a resposta
-    
+
                 if (retorno_convertido.mensagem !== undefined) {
                     alert(retorno_convertido.mensagem);
                 } else {
                     setEmprestimos([...emprestimos, retorno_convertido]);
                     openModal();
                     //setTimeout(() => {
-                       // window.location.reload();
-                  //  }, 2000);
+                    // window.location.reload();
+                    //  }, 2000);
                 }
             })
             .catch(error => {
@@ -204,7 +204,7 @@ const PageForm = () => {
                 alert('Ocorreu um erro ao tentar cadastrar o empréstimo.');
             });
     };
-    
+
 
     // const alterar = () => {
     //     fetch('http://localhost:9000/emprestimos' + objEmprestimo.codEmprestimo, {
@@ -397,12 +397,14 @@ const PageForm = () => {
                                         onChange={aoDigitar}
                                         name="dataDevolucao"
                                     />
-                                    <input
-                                        type="date"
-                                        value={objEmprestimo.dataEmprestimo}
-                                        onChange={aoDigitar}
-                                        name="dataEmprestimo"
-                                    />
+                                    {/*
+                                        <input
+                                            type="date"
+                                            value={objEmprestimo.dataEmprestimo}
+                                            onChange={aoDigitar}
+                                            name="dataEmprestimo"
+                                        />
+                                    */}
                                 </div>
                             </section>
                         </section>
