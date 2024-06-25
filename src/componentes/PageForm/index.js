@@ -167,7 +167,7 @@ const PageForm = () => {
 
     // Funcao para o cadastro de Emprestimos
     const cadastrar = () => {
-        fetch('http://localhost:9000/emprestimos', {
+        fetch('https://bookflow-3gbn.onrender.com/emprestimos', {
             method: 'post',
             body: JSON.stringify(objEmprestimo),
             headers: {
