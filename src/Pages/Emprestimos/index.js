@@ -25,19 +25,28 @@ const PageEmprestimos = () => {
           console.error('A resposta da API não contém a estrutura esperada:', response.data);
         }
       } catch (error) {
-        console.error('Erro ao buscar empréstimos:', error);
+        if (error.response) {
+          // A requisição foi feita e o servidor respondeu com um status code fora do alcance 2xx
+          console.error('Erro na resposta da API:', error.response);
+        } else if (error.request) {
+          // A requisição foi feita mas nenhuma resposta foi recebida
+          console.error('Erro na requisição:', error.request);
+        } else {
+          // Algo aconteceu ao configurar a requisição que disparou um erro
+          console.error('Erro ao configurar a requisição:', error.message);
+        }
       }
     };
     fetchEmprestimos();
   }, []);
-  
+
   useEffect(() => {
     if (emprestimos.length === 0) {
       setCarregandoEmprestimos(true);
     } else {
       setCarregandoEmprestimos(false);
     }
-  }, [emprestimos]);  
+  }, [emprestimos]);
 
   return (
     <main>
@@ -53,7 +62,7 @@ const PageEmprestimos = () => {
         >
 
           {carregandoEmprestimos ? (
-            <LoadAnimation/>
+            <LoadAnimation />
           ) : (
             <Table
               vetor={emprestimos}
