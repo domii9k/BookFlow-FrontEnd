@@ -103,6 +103,9 @@ const PageForm = () => {
         }
     };
 
+    console.log(emprestimos)
+    console.log(emprestimo)
+
     // URL para a fetch
     useEffect(() => {
         fetchData('https://bookflow-3gbn.onrender.com/cursos', setCursos);
